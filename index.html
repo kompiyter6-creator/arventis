@@ -26,7 +26,7 @@
     .header {
       background: #151515;
       color: white;
-      padding: 22px 8%;
+      padding: 20px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -35,10 +35,20 @@
     }
 
     .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       font-size: 26px;
       font-weight: bold;
       letter-spacing: 2px;
       text-transform: uppercase;
+    }
+
+    .logo img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      display: block;
     }
 
     .nav {
@@ -237,6 +247,11 @@
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
     }
 
+    .contact .section-text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .contact-links {
       display: flex;
       justify-content: center;
@@ -294,6 +309,15 @@
         align-items: flex-start;
       }
 
+      .logo {
+        font-size: 22px;
+      }
+
+      .logo img {
+        width: 44px;
+        height: 44px;
+      }
+
       .nav {
         gap: 12px;
       }
@@ -324,7 +348,10 @@
 <body>
 
   <header class="header">
-    <div class="logo">Арвентис</div>
+    <div class="logo">
+      <img src="logo.png" alt="Логотип Арвентис">
+      <span>Арвентис</span>
+    </div>
 
     <nav class="nav">
       <a href="#about">О компании</a>
